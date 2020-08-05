@@ -7,6 +7,10 @@ export default function Home() {
         <title>fael.tech | Experience for Web</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <main>
+        <div>Hero</div>
+        <div>Content</div>
+      </main>
     </div>
   )
 }
