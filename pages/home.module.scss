@@ -1,0 +1,23 @@
+.container {
+  height: 100%;
+  padding: 1.6rem;
+}
+
+main.main {
+  height: 100%;
+  display: flex;
+  flex-flow: row;
+  // align-items: center;
+}
+
+.main__hero {
+  flex: 1 1 40rem;
+  background-color: purple;
+  color: white;
+  box-shadow: 4px 4px 8px 0px #666;
+}
+
+.main__content {
+  flex: 1 1 0;
+  // background-color: lightgray;
+}

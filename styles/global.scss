@@ -27,3 +27,8 @@ html {
     font-size: 75%;     // 1 rem = 12, 12/16 = 75
   }
 }
+
+html, body, #__next {
+  height: 100%;
+  box-sizing: border-box;
+}
