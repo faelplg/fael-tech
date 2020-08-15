@@ -1,0 +1,76 @@
+/* Animations
+ *
+ * Page animation keyframes.
+ */
+
+// EXAMPLES:
+//
+// animation: enterFromLeft 1.6s ease-out;
+// animation-name: enterFromLeft;
+// animation-duration: 1s;
+// animation-timing-function: ease-out;
+// animation-iteration-count: 3;
+// animation-iteration-count: infinite;
+// animation-delay: 1s;
+// animation-fill-mode: backwards;
+
+@keyframes enterFromLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  70% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate(0);
+  }
+}
+.enterFromLeft {
+  animation: enterFromLeft 1.2s ease-out;
+}
+
+@keyframes enterFromRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  80% {
+    transform: translateX(-1rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+.enterFromRight {
+  animation: enterFromRight 1.6s ease-out;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-3rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(0);
+  }
+}

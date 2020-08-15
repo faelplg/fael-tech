@@ -10,14 +10,46 @@ main.main {
   // align-items: center;
 }
 
-.main__hero {
-  flex: 1 1 40rem;
-  background-color: purple;
-  color: white;
-  box-shadow: 4px 4px 8px 0px #666;
+// Hero will have 3 stages:
+// 1 - Default: Show logo principal
+// 2 - Menu: Show main links
+// 3 - Sidebar
+
+.main {
+  &__ {
+    &hero {
+      flex: auto;
+      background: linear-gradient(104.73deg, rgba(30, 11, 54, 0.8) 27.27%, rgba(202, 55, 130, 0.8) 100%, rgba(202, 55, 130, 0.8) 100%);
+      color: white;
+      box-shadow: 4px 4px 8px 0px #666;
+    }
+    &content {
+      flex: auto;
+    }
+  }
 }
 
-.main__content {
-  flex: 1 1 0;
-  // background-color: lightgray;
+.hero {
+  &__{
+    &logo {
+      height: 80%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    &footer {
+      height: 20%;
+    }
+  }
 }
+
+// .main__hero {
+//   flex: auto;
+//   background: linear-gradient(104.73deg, rgba(30, 11, 54, 0.8) 27.27%, rgba(202, 55, 130, 0.8) 100%, rgba(202, 55, 130, 0.8) 100%);
+//   color: white;
+//   box-shadow: 4px 4px 8px 0px #666;
+// }
+
+// .main__content {
+//   flex: auto;
+// }
