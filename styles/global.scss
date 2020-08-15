@@ -1,36 +1,5 @@
 @import "abstracts/mixins";
 
 @import "base/animations";
-
-*,
-*::after,
-*::before {
-  margin: 0;
-  padding: 0;
-  box-sizing: inherit;
-}
-
-html {
-  // This defines what 1rem is.
-  /* font-size: 10px; 1 rem is equal to 10px. */
-  font-size: 62.5%; // 10px divided by 16px (root default font-size)
-
-  // Not needed.
-  // @include respond(phone) {
-  //   font-size: 50%;
-  // }
-  @include respond(tab-land) {  // width < 1200?
-    font-size: 56.25%;  // 1rem = 9px, 9/16 = 56.25
-  }
-  @include respond(tab-port) {  // width < 900?
-    font-size: 50%;     // 1rem = 8px, 8/16 = 50
-  }
-  @include respond(big-desktop) {
-    font-size: 75%;     // 1 rem = 12, 12/16 = 75
-  }
-}
-
-html, body, #__next {
-  height: 100%;
-  box-sizing: border-box;
-}
+@import "base/base";
+@import "base/typography";

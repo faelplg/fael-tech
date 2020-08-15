@@ -18,7 +18,12 @@ export default function Home() {
           <div className={styles['hero__footer']}>
           </div>
         </div>
-        <div className={styles['main__content']}></div>
+        <div className={styles['main__content']}>
+          <h2>Olá, sou Rafael Goulart (a.k.a Fael) e obrigado pela visita!</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae nam exercitationem itaque maxime, dolorum sunt esse voluptatibus ex tenetur laboriosam eligendi, doloribus officiis error alias corrupti iure molestiae, impedit ratione!
+          </p>
+        </div>
       </main>
     </div>
   )
