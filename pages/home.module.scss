@@ -13,6 +13,7 @@
       background: linear-gradient(104.73deg, rgba(30, 11, 54, 0.8) 27.27%, rgba(202, 55, 130, 0.8) 100%, rgba(202, 55, 130, 0.8) 100%);
       color: white;
       box-shadow: $box-shadow-right;
+      z-index: 10;
     }
     &content { //.main__content
       flex: auto;

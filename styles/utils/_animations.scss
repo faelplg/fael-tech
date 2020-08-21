@@ -15,6 +15,8 @@
 // animation-delay: 1s;
 // animation-fill-mode: backwards;
 
+/// Animation
+/// Enter from left and move to right.
 @keyframes enterFromLeft {
   0% {
     opacity: 0;
@@ -33,23 +35,24 @@
   animation: enterFromLeft 1.2s ease-out;
 }
 
+/// Animation
+/// Enter from right and move to left.
 @keyframes enterFromRight {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
 
-  80% {
-    transform: translateX(-1rem);
+  70% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
     transform: translate(0);
   }
 }
 .enterFromRight {
-  animation: enterFromRight 1.6s ease-out;
+  animation: enterFromRight 1.2s ease-out;
 }
 
 @keyframes enterFromBottom {
