@@ -11,10 +11,14 @@ export default function Home() {
         <title>fael.tech | Experience for Web</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <nav className={styles.nav}>
+        <p>Menu</p>
+      </nav>
       <main className={styles.main}>
-        <div className={[styles['main__hero'], utils['enterFromRight']].join(' ')}>
-          <div className={styles['hero__logo']}>
+        <div className={[styles['main__hero']].join(' ')}>
+          <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
+            <h1>Experience for Web</h1>
           </div>
           <div className={styles['hero__footer']}></div>
         </div>
