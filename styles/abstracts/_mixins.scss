@@ -12,12 +12,18 @@
 //   }
 // }
 
-// @mixin absCenter {
-//   position: absolute;
-//   top: 50%;
-//   left: 50%;
-//   transform: translate(-50%, -50%);
-// }
+@mixin absCenter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@mixin stickyElement {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
 
 // Media queries manager
 /*

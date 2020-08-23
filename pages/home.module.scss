@@ -1,33 +1,66 @@
-@import "../styles/abstracts.scss";
+@import '../styles/abstracts.scss';
 
 .nav {
-  height: 64px;
-  background-color: green;
-  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 3.2rem;
+  height: 6.4rem;
+  background-image: linear-gradient(105deg, rgba(202, 55, 130, 0.7) 8%, rgba(30, 11, 54, 0.8) 48%),
+    url(/img/hero-orion-nebula.jpg);
+  background-size: cover;
+  background-position: top;
+  margin-bottom: 3.2rem;
+  border-radius: 0.8rem;
   box-shadow: $box-shadow;
-  position: sticky;
-  top: 0;
-  left: 0;
+  // @include stickyElement;
   z-index: 20;
+
+  .toolbar__left {
+    flex: auto;
+    display: flex;
+    align-items: center;
+    img {
+      height: 4.8rem;
+      width: 4.8rem;
+    }
+  }
+  .toolbar__right {
+    color: $color-white;
+    flex: shrink;
+    display: flex;
+    align-items: center;
+
+    span {
+      margin: 0 0.8rem;
+    }
+  }
 }
 
 .main {
   &__ {
-    // Main Hero has 3 states:
-    // 1 - Default: Show main logo
-    // 2 - Menu: Show main links
-    // 3 - Sidebar:
-    &hero { // .main__hero
-      height: calc(100vh - 6.4rem - 64px - 16px);
-      background-image: linear-gradient(105deg, rgba(202,55,130,0.7) 8%, rgba(30, 11, 54, 0.8) 48%),url(/img/hero-orion-nebula.jpg);
+    &hero {
+      height: calc(80vh - 6.4rem - 6.4rem - 3.2rem);
+      background-image: linear-gradient(
+          105deg,
+          rgba(202, 55, 130, 0.7) 8%,
+          rgba(30, 11, 54, 0.8) 48%
+        ),
+        url(/img/hero-orion-nebula.jpg);
       background-size: cover;
       background-position: center;
-      background-attachment: fixed;
-      color: white;
-      box-shadow: $box-shadow;
+      // background-attachment: fixed;
+      color: $color-white;
       z-index: 10;
+      border-radius: 0.8rem;
+      box-shadow: $box-shadow;
     }
-    &content { //.main__content
+    &cta {
+      height: 20vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    &content {
       padding: 3.2rem;
       display: flex;
       flex-flow: column;
@@ -37,9 +70,9 @@
 }
 
 .hero {
-  &__{
-    &header { // .hero__logo
-      height: 80%;
+  &__ {
+    &header {
+      height: 100%;
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -48,9 +81,9 @@
       img {
         width: 32rem;
       }
-    }
-    &footer { // .hero__footer
-      height: 20%;
+      h1 {
+        color: $background-color;
+      }
     }
   }
 }
