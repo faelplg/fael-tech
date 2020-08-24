@@ -34,8 +34,7 @@ export default function Home() {
         <div className={[styles['main__hero']].join(' ')}>
           <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
-            <hr/>
-            <h1 className={['text--headline', utils['m-t-sm']].join(' ')} style={{fontSize: '4.2rem', fontWeight: 'normal'}}>Experience for Web</h1>
+            <h1 className={['text--headline', utils['m-t-sm']].join(' ')}>Experience for Web</h1>
           </div>
         </div>
         {/* CALL TO ACTION
