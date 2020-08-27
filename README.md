@@ -1,10 +1,10 @@
 version | branch | last update
 -------:|-------:|------------:
-   0.2.1|  master|  24-08-2020
+   0.2.1|  master|  26-08-2020
 
 ## Getting Started
 
-First, run the development server:
+Run the development server:
 
 ```bash
 npm run dev
