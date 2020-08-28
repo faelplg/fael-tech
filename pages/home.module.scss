@@ -1,5 +1,6 @@
 @import '../styles/abstracts.scss';
 
+// nav block
 .nav {
   display: flex;
   align-items: center;
@@ -9,7 +10,7 @@
     url(/img/hero-orion-nebula.jpg);
   background-size: cover;
   background-position: top;
-  margin-bottom: 3.2rem;
+  margin-bottom: 2.4rem;
   border-radius: 0.8rem;
   box-shadow: $box-shadow;
   // @include stickyElement;
@@ -34,12 +35,20 @@
       margin: 0 0.8rem;
     }
   }
+  @include respond(phone) {
+    margin-bottom: 1.6rem;
+  }
 }
 
+// main block
 .main {
   &__ {
+    // .main__hero
     &hero {
-      height: calc(80vh - 6.4rem - 6.4rem - 3.2rem);
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      height: calc(85vh - 4.8rem - 6.4rem);
       background-image: linear-gradient(
           105deg,
           rgba(202, 55, 130, 0.7) 8%,
@@ -53,13 +62,18 @@
       z-index: 10;
       border-radius: 0.8rem;
       box-shadow: $box-shadow;
+      @include respond(phone) {
+        height: calc(85vh - 1.6rem - 6.4rem);
+      }
     }
+    // .main__cta
     &cta {
-      height: 20vh;
+      height: 15vh;
       display: flex;
       align-items: center;
       justify-content: center;
     }
+    // .main__content
     &content {
       padding: 3.2rem;
       display: flex;
@@ -69,29 +83,45 @@
   }
 }
 
+// hero block
 .hero {
   &__ {
+    // .hero__header
     &header {
-      height: 100%;
+      flex: auto;
       display: flex;
       flex-flow: column;
-      justify-content: center;
+      justify-content: flex-end;
       align-items: center;
 
       img {
-        width: 24rem;
-        @include respond(big-desktop) {
+        width: 30rem;
+        @include respond(tab-port) {
+          width: 36rem;
+        }
+        @include respond(phone) {
           width: 24rem;
         }
       }
 
       h1 {
         color: $background-color;
-        font-size: 2.4rem;
-        @include respond(big-desktop) {
-          font-size: 2rem;
+        font-size: 3.3rem;
+        margin-top: 0.8rem;
+        @include respond(tab-port) {
+          font-size: 4rem;
+          margin-top: 1.6rem;
+        }
+        @include respond(phone) {
+          font-size: 2.6rem;
+          margin-top: 0.4rem;
         }
       }
+    }
+    // .hero__action
+    &action {
+      flex: auto;
+      padding: 3.2rem;
     }
   }
 }

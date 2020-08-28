@@ -15,7 +15,7 @@ export default function Home() {
       <nav className={styles.nav}>
         {/* TOOLBAR LEFT */}
         <div className={styles['toolbar__left']}>
-          <img src="/img/logo/helmet_white.png" alt="Fael.Tech logo. An astronaut white helmet."/>
+          <img src="/img/logo/helmet_white.png" alt="Fael.Tech logo. An astronaut white helmet." />
         </div>
         {/* TOOLBAR RIGHT */}
         <div className={styles['toolbar__right']}>
@@ -27,34 +27,30 @@ export default function Home() {
       {/* MAIN */}
       <main className={styles.main}>
         {/* MAIN HERO */}
-        {/* -
-        -
-        -
-        - */}
         <div className={[styles['main__hero']].join(' ')}>
+          {/* HERO HEADER */}
           <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
-            <h1 className={['text--headline', utils['m-t-sm']].join(' ')}>Experience for Web</h1>
+            <h1 className={['text--headline']}>Experience for Web</h1>
+          </div>
+          {/* HERO ACTION */}
+          <div className={styles['hero__action']}>
+            <button>Postagens</button>
+            <button>Projetos</button>
           </div>
         </div>
-        {/* CALL TO ACTION
-        *
-        *
-        * */}
+        {/* MAIN CALL TO ACTION */}
         <div className={styles['main__cta']}>
-          <button>Postagens</button>
           <a href="#hello">Mais sobre mim</a>
-          <button>Projetos</button>
         </div>
-        {/* MAIN CONTENT
-        *
-        *
-        *        */}
+        {/* MAIN CONTENT */}
         <div className={styles['main__content']}>
           <div className={utils['t-c']}>
             <img src="/img/avatar.png" alt="Fael avatar." />
           </div>
-          <h2 id="hello" className={utils['t-c']}>Olá, eu sou Rafael Goulart, mas pode me chamar de Fael.</h2>
+          <h2 id="hello" className={utils['t-c']}>
+            Olá, eu sou Rafael Goulart, mas pode me chamar de Fael.
+          </h2>
           <h2 className={utils['t-c']}>Obrigado pela visita e seja muito bem-vinda/o!</h2>
           <br />
           <p className={utils['t-c']}>
