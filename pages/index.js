@@ -32,16 +32,16 @@ export default function Home() {
           <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
             <h1 className={['text--headline']}>Experience for Web</h1>
+            <p>
+              Experimentos, projetos e conteúdo sobre engenharia de software e experiência de usuário para Web.
+            </p>
           </div>
           {/* HERO ACTION */}
           <div className={styles['hero__action']}>
             <button>Postagens</button>
             <button>Projetos</button>
+            <a href="#hello">Mais sobre mim</a>
           </div>
-        </div>
-        {/* MAIN CALL TO ACTION */}
-        <div className={styles['main__cta']}>
-          <a href="#hello">Mais sobre mim</a>
         </div>
         {/* MAIN CONTENT */}
         <div className={styles['main__content']}>
