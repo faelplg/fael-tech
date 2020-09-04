@@ -48,7 +48,9 @@
       display: flex;
       flex-flow: row;
       align-items: center;
-      height: calc(85vh - 4.8rem - 6.4rem);
+      min-height: 46.4rem;
+      height: calc(100vh - 4.8rem - 2.4rem - 6.4rem);
+      padding: 4.8rem;
       background-image: linear-gradient(
           105deg,
           rgba(202, 55, 130, 0.7) 8%,
@@ -64,7 +66,11 @@
       box-shadow: $box-shadow;
       @include respond(tab-port) {
         flex-flow: column;
-        height: calc(85vh - 1.6rem - 6.4rem);
+        height: calc(100vh - 4.8rem - 2.4rem - 6.4rem);
+      }
+      @include respond(phone) {
+        padding: 2.4rem;
+        height: calc(100vh - 1.6rem - 1.6rem - 6.4rem);
       }
     }
     // .main__content
@@ -92,11 +98,13 @@
 
       @include respond(tab-port) {
         margin: unset;
+        justify-content: flex-end;
         align-items: center;
         height: auto;
 
         p {
           max-width: 30rem;
+          text-align: center;
         }
       }
 
@@ -104,6 +112,9 @@
         width: 30rem;
         @include respond(tab-port) {
           width: 36rem;
+          @media only screen and (max-height: 400px) {
+            width: 24rem;
+          }
         }
         @include respond(phone) {
           width: 24rem;
@@ -113,14 +124,18 @@
       h1 {
         color: $background-color;
         font-size: 3.3rem;
-        margin-top: 0.8rem;
+        margin-top: 1.6rem;
+
         @include respond(tab-port) {
           font-size: 4rem;
+          @media only screen and (max-height: 400px) {
+            font-size: 2.6rem;
+          }
           margin-top: 1.6rem;
         }
         @include respond(phone) {
           font-size: 2.6rem;
-          margin-top: 0.4rem;
+          margin-top: 1.6rem;
         }
       }
     }
@@ -133,6 +148,17 @@
       align-items: center;
       justify-content: center;
       margin-right: calc(0.1 * 100vw - 2.4rem);
+
+      @include respond(tab-port) {
+        margin: unset;
+        margin-top: 3.2rem;
+        justify-content: flex-start;
+        max-height: 40%;
+      }
+
+      @include respond(phone) {
+        max-height: 32%;
+      }
     }
   }
 }
