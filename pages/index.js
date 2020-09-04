@@ -19,9 +19,9 @@ export default function Home() {
         </div>
         {/* TOOLBAR RIGHT */}
         <div className={styles['toolbar__right']}>
-          <span className="text--menu">Menu 1</span>
-          <span className="text--menu">Menu 2</span>
-          <span className="text--menu">Menu 3</span>
+          <span className="text--menu">Conteúdo</span>
+          <span className="text--menu">Projetos</span>
+          <span className="text--menu">Biografia</span>
         </div>
       </nav>
       {/* MAIN */}
@@ -32,13 +32,13 @@ export default function Home() {
           <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
             <h1 className={['text--headline']}>Experience for Web</h1>
-            <p>
+            <p style={{'max-width': '40rem'}}>
               Experimentos, projetos e conteúdo sobre engenharia de software e experiência de usuário para Web.
             </p>
           </div>
           {/* HERO ACTION */}
           <div className={styles['hero__action']}>
-            <button>Postagens</button>
+            <button>Conteúdo</button>
             <button>Projetos</button>
             <a href="#hello">Mais sobre mim</a>
           </div>
