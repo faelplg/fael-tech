@@ -1,52 +1,56 @@
 .navigation {
+  z-index: 10;
 
   &__checkbox {
     display: none;
   }
 
   &__button {
-    background-color: #ffffff;
-    height: 7rem;
-    width: 7rem;
+    background-color: #1e0b36;
+    height: 64px;
+    width: 64px;
     position: fixed;
-    top: 6rem;
-    right: 6rem;
+    top: 4rem;
+    left: 4rem;
     text-align: center;
     border-radius: 50%;
-    z-index: 2000;
-    box-shadow: 0 1rem 3rem rgba($color: #222222, $alpha: 0.1);
+    z-index: 30;
+    box-shadow: 0 0.48rem 0.64rem rgba(#222, 0.7);
     cursor: pointer;
 
     @media (max-width: 75em) {
-      top: 4rem;
-      right: 4rem;
+      top: 3.2rem;
+      left: 3.2rem;
     }
 
     @media (max-width: 37.5em) {
-      top: 3rem;
-      right: 3rem;
+      top: 3.2rem;
+      left: 3.2rem;
     }
   }
 
   &__background {
-    height: 6rem;
-    width: 6rem;
+    height: 60px;
+    width: 60px;
     border-radius: 50%;
     position: fixed;
-    top: 6.5rem;
-    right: 6.5rem;
-    background-image: radial-gradient(#755b8e, #483160);
-    z-index: 1000;
+    top: 4rem;
+    left: 4rem;
+    background-image: radial-gradient(
+      rgba($color: #483160, $alpha: 0.96),
+      rgba($color: #950056, $alpha: 0.96)
+    );
+    z-index: 20;
     transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1);
-    
+
     @media (max-width: 75em) {
-      top: 4.5rem;
-      right: 4.5rem;
+      top: 3.6rem;
+      left: 3.6rem;
     }
 
     @media (max-width: 37.5em) {
-      top: 3.5rem;
-      right: 3.5rem;
+      top: 3.6rem;
+      left: 3.6rem;
     }
   }
 
@@ -56,7 +60,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 1500;
+    z-index: 25;
     opacity: 0;
     width: 0;
     transition: all 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -86,10 +90,7 @@
       color: white;
       text-decoration: none;
       text-transform: uppercase;
-      background-image: linear-gradient(120deg,
-                                        transparent 0%,
-                                        transparent 50%,
-                                        #ffffff 50%);
+      background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #ffffff 50%);
       background-size: 220%;
       transition: all 0.5s;
 
@@ -107,12 +108,13 @@
     }
   }
 
-  // Functionality
-  &__checkbox:checked ~ &__background{
+  // Scale background when checked
+  &__checkbox:checked ~ &__background {
     transform: scale(80);
   }
 
-  &__checkbox:checked ~ &__nav{
+  // Show menu texts when checked
+  &__checkbox:checked ~ &__nav {
     opacity: 1;
     width: 100%;
   }
@@ -120,15 +122,15 @@
   // Icon
   &__icon {
     position: relative;
-    margin-top: 3.5rem;
+    margin-top: 32px;
 
     &,
     &::before,
     &::after {
       display: inline-block;
-      width: 3rem;
-      height: 2px;
-      background-color: #e1e2e1;
+      width: 24px;
+      height: 3px;
+      background-color: #ffffff;
     }
 
     &::before,
@@ -139,16 +141,20 @@
       transition: all 0.2s;
     }
 
-    &::before { top: -0.8rem; }
-    &::after { top: 0.8rem; }
+    &::before {
+      top: -8px;
+    }
+    &::after {
+      top: 8px;
+    }
   }
 
   &__button:hover &__icon::before {
-    top: -1rem;
+    top: -4.8px;
   }
 
   &__button:hover &__icon::after {
-    top: 1rem;
+    top: 4.8px;
   }
 
   &__checkbox:checked + &__button &__icon {
