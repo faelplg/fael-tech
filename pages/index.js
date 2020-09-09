@@ -12,18 +12,57 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* TOOLBAR */}
-      <nav className={styles.nav}>
-        {/* TOOLBAR LEFT */}
+      {/* <nav className={styles.nav}>
+        TOOLBAR LEFT
         <div className={styles['toolbar__left']}>
           <img src="/img/logo/helmet_white.png" alt="Fael.Tech logo. An astronaut white helmet." />
         </div>
-        {/* TOOLBAR RIGHT */}
+        TOOLBAR RIGHT
         <div className={styles['toolbar__right']}>
           <span className="text--menu">Conteúdo</span>
           <span className="text--menu">Projetos</span>
           <span className="text--menu">Biografia</span>
         </div>
-      </nav>
+      </nav> */}
+      <div class="navigation">
+        <input id="navi-toggle" type="checkbox" className="navigation__checkbox" />
+
+        <label for="navi-toggle" className="navigation__button">
+          <span className="navigation__icon">&nbsp;</span>
+        </label>
+
+        <div className="navigation__background">&nbsp;</div>
+
+        <nav className="navigation__nav">
+          <ul className="navigation__list">
+            <li className="navigation__item">
+              <a href="#" className="navigation__link">
+                <span>01</span>About Natours
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link">
+                <span>02</span>Your benefits
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link">
+                <span>03</span>Popular tours
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link">
+                <span>04</span>Stories
+              </a>
+            </li>
+            <li className="navigation__item">
+              <a href="#" className="navigation__link">
+                <span>05</span>Book now
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
       {/* MAIN */}
       <main className={styles.main}>
         {/* MAIN HERO */}
@@ -33,7 +72,8 @@ export default function Home() {
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
             <h1 className={['text--headline']}>Experience for Web</h1>
             <p style={{'max-width': '40rem'}}>
-              Experimentos, projetos e conteúdo sobre engenharia de software e experiência de usuário para Web.
+              Experimentos, projetos e conteúdo sobre engenharia de software e experiência de
+              usuário para Web.
             </p>
           </div>
           {/* HERO ACTION */}
