@@ -124,7 +124,8 @@
       h1 {
         color: $background-color;
         font-size: 3.3rem;
-        margin-top: 1.6rem;
+        margin-top: 2.4rem;
+        color: $background-color;
 
         @include respond(tab-port) {
           font-size: 4rem;

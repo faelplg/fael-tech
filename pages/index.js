@@ -70,10 +70,10 @@ export default function Home() {
           {/* HERO HEADER */}
           <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
-            <h1 className={['text--headline']}>Experience for Web</h1>
-            <p style={{'max-width': '40rem'}}>
-              Experimentos, projetos e conteúdo sobre engenharia de software e experiência de
-              usuário para Web.
+            <h1 className={['text--headline']}>Experiência para a Web</h1>
+            <p style={{'max-width': '48rem'}}>
+              Experimentos, conteúdos e projetos sobre experiência de
+              usuário e desenvolvimento de softwares para a Web.
             </p>
           </div>
           {/* HERO ACTION */}
