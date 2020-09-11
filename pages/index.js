@@ -24,7 +24,7 @@ export default function Home() {
           <span className="text--menu">Biografia</span>
         </div>
       </nav> */}
-      <div class="navigation">
+      <div className="navigation">
         <input id="navi-toggle" type="checkbox" className="navigation__checkbox" />
 
         <label for="navi-toggle" className="navigation__button">
