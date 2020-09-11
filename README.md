@@ -1,6 +1,6 @@
 version | branch | last update
 -------:|-------:|------------:
-   0.2.1|  master|  01-09-2020
+   0.2.1|  master|  10-09-2020
 
 ## Getting Started
 
