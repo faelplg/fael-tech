@@ -27,7 +27,7 @@ export default function Home() {
       <div className="navigation">
         <input id="navi-toggle" type="checkbox" className="navigation__checkbox" />
 
-        <label for="navi-toggle" className="navigation__button">
+        <label htmlFor="navi-toggle" className="navigation__button">
           <span className="navigation__icon">&nbsp;</span>
         </label>
 
@@ -71,7 +71,7 @@ export default function Home() {
           <div className={styles['hero__header']}>
             <img src="/img/logo/main.png" alt="Fael.Tech logo." />
             <h1 className={['text--headline']}>Experiência para a Web</h1>
-            <p style={{'max-width': '48rem'}}>
+            <p style={{'maxWidth': '48rem'}}>
               Experimentos, conteúdos e projetos sobre experiência de
               usuário e desenvolvimento de softwares para a Web.
             </p>
