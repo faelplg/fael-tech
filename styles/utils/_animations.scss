@@ -55,6 +55,8 @@
   animation: enterFromRight 1.2s ease-out;
 }
 
+/// Animation
+/// Enter from bottom and move to top.
 @keyframes enterFromBottom {
   0% {
     opacity: 0;
@@ -67,9 +69,11 @@
   }
 }
 .enterFromBottom {
-  animation: enterFromRight 1.6s ease-out;
+  animation: enterFromBottom 1.6s ease-out;
 }
 
+/// Animation
+/// Enter from top and move to bottom.
 @keyframes enterFromTop {
   0% {
     opacity: 0;
@@ -82,5 +86,5 @@
   }
 }
 .enterFromTop {
-  animation: enterFromRight 1.6s ease-out;
+  animation: enterFromTop 1.6s ease-out;
 }

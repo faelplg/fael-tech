@@ -1,3 +1,9 @@
+////
+/// Home page
+/// @group Home
+/// @author Rafael Goulart (faelplg)
+////
+
 @import '../styles/abstracts.scss';
 
 // nav block
@@ -40,126 +46,123 @@
   }
 }
 
-// main block
+/// Main block.
+/// @require {variable} color-white
 .main {
-  &__ {
-    // .main__hero
-    &hero {
-      display: flex;
-      flex-flow: row;
-      align-items: center;
-      min-height: 46.4rem;
-      height: calc(100vh - 4.8rem);
-      padding: 4.8rem;
-      background-image: linear-gradient(
-          105deg,
-          rgba(202, 55, 130, 0.7) 8%,
-          rgba(30, 11, 54, 0.9) 48%
-        ),
-        url(/img/hero-orion-nebula.jpg);
-      background-size: cover;
-      background-position: center;
-      // background-attachment: fixed;
-      color: $color-white;
-      z-index: 10;
-      border-radius: 0.8rem;
-      box-shadow: $box-shadow;
-      @include respond(tab-port) {
-        flex-flow: column;
-        height: calc(100vh - 4.8rem - 2.4rem - 6.4rem);
-      }
-      @include respond(phone) {
-        padding: 2.4rem;
-        height: calc(100vh - 1.6rem - 1.6rem - 6.4rem);
-      }
-    }
-    // .main__content
-    &content {
-      padding: 3.2rem;
-      display: flex;
+  // .main__hero
+  &__hero {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    min-height: 46.4rem;
+    height: calc(100vh - 4.8rem);
+    padding: 4.8rem;
+    background-image: linear-gradient(
+        105deg,
+        rgba(202, 55, 130, 0.7) 8%,
+        rgba(30, 11, 54, 0.9) 48%
+      ),
+      url(/img/hero-orion-nebula.jpg);
+    background-size: cover;
+    background-position: center;
+    // background-attachment: fixed;
+    color: $color-white;
+    z-index: 10;
+    border-radius: 0.8rem;
+    box-shadow: $box-shadow;
+    @include respond(tab-port) {
       flex-flow: column;
-      justify-content: center;
+      height: calc(100vh - 4.8rem - 2.4rem - 6.4rem);
     }
+    @include respond(phone) {
+      padding: 2.4rem;
+      height: calc(100vh - 1.6rem - 1.6rem - 6.4rem);
+    }
+  }
+  // .main__content
+  &__content {
+    padding: 3.2rem;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
   }
 }
 
-// hero block
+/// Hero block.
 .hero {
-  &__ {
-    // .hero__header
-    &header {
-      height: 100%;
-      flex: 1 0 0;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-      align-items: flex-start;
-      margin-left: calc(0.1 * 100vw - 2.4rem);
+  // .hero__header
+  &__header {
+    height: 100%;
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: calc(0.1 * 100vw - 2.4rem);
 
-      @include respond(tab-port) {
-        margin: unset;
-        justify-content: flex-end;
-        align-items: center;
-        height: auto;
+    @include respond(tab-port) {
+      margin: unset;
+      justify-content: flex-end;
+      align-items: center;
+      height: auto;
 
-        p {
-          max-width: 30rem;
-          text-align: center;
-        }
+      p {
+        max-width: 30rem;
+        text-align: center;
       }
+    }
 
-      img {
-        width: 30rem;
-        @include respond(tab-port) {
-          width: 36rem;
-          @media only screen and (max-height: 400px) {
-            width: 24rem;
-          }
-        }
-        @include respond(phone) {
+    img {
+      width: 30rem;
+      @include respond(tab-port) {
+        width: 36rem;
+        @media only screen and (max-height: 400px) {
           width: 24rem;
         }
       }
-
-      h1 {
-        color: $background-color;
-        font-size: 3.3rem;
-        margin-top: 2.4rem;
-        color: $background-color;
-
-        @include respond(tab-port) {
-          font-size: 4rem;
-          @media only screen and (max-height: 400px) {
-            font-size: 2.6rem;
-          }
-          margin-top: 1.6rem;
-        }
-        @include respond(phone) {
-          font-size: 2.6rem;
-          margin-top: 1.6rem;
-        }
+      @include respond(phone) {
+        width: 24rem;
       }
     }
-    // .hero__action
-    &action {
-      height: 100%;
-      flex: 1 0 0;
-      display: flex;
-      flex-flow: column;
-      align-items: center;
-      justify-content: center;
-      margin-right: calc(0.1 * 100vw - 2.4rem);
+
+    h1 {
+      color: $background-color;
+      font-size: 3.3rem;
+      margin-top: 2.4rem;
+      color: $background-color;
 
       @include respond(tab-port) {
-        margin: unset;
-        margin-top: 3.2rem;
-        justify-content: flex-start;
-        max-height: 40%;
+        font-size: 4rem;
+        @media only screen and (max-height: 400px) {
+          font-size: 2.6rem;
+        }
+        margin-top: 1.6rem;
       }
-
       @include respond(phone) {
-        max-height: 32%;
+        font-size: 2.6rem;
+        margin-top: 1.6rem;
       }
+    }
+  }
+  // .hero__action
+  &__action {
+    height: 100%;
+    flex: 1 0 0;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: calc(0.1 * 100vw - 2.4rem);
+
+    @include respond(tab-port) {
+      margin: unset;
+      margin-top: 3.2rem;
+      justify-content: flex-start;
+      max-height: 40%;
+    }
+
+    @include respond(phone) {
+      max-height: 32%;
     }
   }
 }

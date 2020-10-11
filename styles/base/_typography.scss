@@ -1,6 +1,6 @@
 ////
-/// Typography
-/// @group Base
+/// Typography styles.
+/// @group Typography
 /// @author Rafael Goulart (faelplg)
 ////
 
@@ -13,6 +13,7 @@
 // font-family: 'Libre Baskerville', serif;
 // font-family: 'Fira Code', monospace;
 
+/// Default typography.
 body,
 p,
 .text--body {
@@ -25,6 +26,7 @@ p,
   letter-spacing: 0;
 }
 
+/// Text caption.
 caption,
 .text--caption {
   font-size: 1.2rem;
@@ -32,6 +34,7 @@ caption,
   line-height: 3.2rem;
 }
 
+/// Text code.
 code {
   font-family: 'Fira Code', monospace;
   background-color: #f5f5f6;
@@ -40,6 +43,7 @@ code {
   line-height: 2.5rem;
 }
 
+/// Roboto styled elements.
 h1,
 h2,
 h3,
@@ -51,6 +55,8 @@ h4,
 button {
   font-family: 'Roboto', sans-serif;
 }
+
+/// Title.
 h1,
 .text--title {
   font-style: normal;
@@ -59,6 +65,7 @@ h1,
   line-height: 4.4rem;
 }
 
+/// Subtitle.
 h2,
 .text--subhead {
   font-style: normal;
@@ -67,6 +74,7 @@ h2,
   line-height: 3.2rem;
 }
 
+/// Menu.
 h3,
 .text--menu {
   font-style: normal;
@@ -75,6 +83,7 @@ h3,
   line-height: 3.2rem;
 }
 
+/// Button.
 h4,
 button,
 .text--button {
@@ -86,6 +95,7 @@ button,
   letter-spacing: 0.032rem;
 }
 
+/// Roboto Condensed styled elements.
 .text--headline,
 .text--display-1,
 .text--display-2,
@@ -94,6 +104,7 @@ button,
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+/// Headline.
 .text--headline {
   font-style: normal;
   font-weight: bold;
@@ -103,24 +114,31 @@ button,
   text-transform: uppercase;
 }
 
+/// Display 1.
 .text--display-1 {
   font-style: normal;
   font-weight: normal;
   font-size: 3.4rem;
   line-height: 5.2rem;
 }
+
+/// Display 2.
 .text--display-2 {
   font-style: normal;
   font-weight: normal;
   font-size: 4.5rem;
   line-height: 6.4rem;
 }
+
+/// Display 3.
 .text--display-3 {
   font-style: normal;
   font-weight: normal;
   font-size: 5.6rem;
   line-height: 6.4rem;
 }
+
+/// Display 4.
 .text--display-4 {
   font-style: normal;
   font-weight: 300;
@@ -128,6 +146,7 @@ button,
   line-height: 12.8rem;
 }
 
+/// Paragraph modifier.
 p {
   &:not(:last-child) {
     margin-bottom: 1.6rem;
